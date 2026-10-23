@@ -1,0 +1,1002 @@
+
+/* VARIABILI E REGOLE CONDIVISE */
+:root {
+    --blu-bf: #153B66;
+    --bordo-chiaro: #DBE5F0;
+}
+
+.azienda,
+.sostenibilita,
+.esg,
+.iniziative,
+.report {
+    scroll-margin-top: 90px;
+}
+
+.azienda-titolo,
+.sostenibilita-intro h2,
+.esg-intro h2,
+.iniziative-intro h2,
+.report-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* ===== GENERALE ===== */
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 90px;
+    padding: 0 6%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(8px);
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: var(--blu-bf);
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+    background-color: #EAF1F8;
+}
+
+.site-header nav a:active {
+    background-color: #BCD7EF;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--blu-bf);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: calc(100svh - 90px);
+    background-image: linear-gradient( rgba(15, 45, 85, 0.50), rgba(15, 45, 85, 0.50) ), url("images/hero_image.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-azienda {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.hero-cta-main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-cta-main a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: white;
+    color: var(--blu-bf);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* ===== MISSION ===== */
+.azienda-titolo {
+    text-align: center;
+    color: var(--blu-bf);
+    margin: 0;
+    padding: 45px 20px;
+}
+
+.azienda-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.azienda-testo {
+    background-color: var(--blu-bf);
+    color: white;
+    padding: 50px 8%;
+    display: flex;
+    align-items: center;
+}
+
+.azienda-testo p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.azienda-loghi {
+    background-color: white;
+    padding: 40px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.azienda-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+}
+
+.azienda-logo img {
+    width: 100%;
+    max-width: 180px;
+    max-height: 95px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.azienda-logo img.logo-cai {
+    transform: scale(1.30);
+}
+
+.azienda-logo img.logo-edu {
+    transform: scale(1.40);
+}
+
+.azienda-logo img.logo-bf-agricola {
+    transform: scale(1.05);
+}
+
+.azienda-logo img.logo-bf-international {
+    transform: scale(0.95);
+}
+
+/* ===== SOSTENIBILITÀ ===== */
+.sostenibilita {
+    background-color: white;
+    padding: 45px 6% 70px;
+}
+
+.sostenibilita-intro {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.sostenibilita-intro h2 {
+    color: var(--blu-bf);
+    margin: 0 0 22px;
+}
+
+.sostenibilita-intro p {
+    color: var(--blu-bf);
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.sostenibilita-cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.sostenibilita-card {
+    background-color: white;
+    border: 1px solid var(--bordo-chiaro);
+    border-radius: 12px;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sostenibilita-card-icona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+.sostenibilita-card-icona img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.sostenibilita-card h3 {
+    color: var(--blu-bf);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 18px;
+}
+
+.sostenibilita-card p {
+    color: var(--blu-bf);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== ESG ===== */
+.esg {
+    background-color: var(--blu-bf);
+    padding: 50px 6% 75px;
+}
+
+.esg-intro {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.esg-intro h2 {
+    color: white;
+    margin: 0 0 14px;
+}
+
+.esg-intro p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.esg-contenitore {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: white;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.esg-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.esg-card {
+    background-color: white;
+    border: 1px solid var(--bordo-chiaro);
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.esg-card h3 {
+    color: var(--blu-bf);
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 22px 15px;
+}
+
+.esg-card-foto {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.esg-lista {
+    list-style: none;
+    margin: 0;
+    padding: 25px 20px 30px;
+}
+
+.esg-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: var(--blu-bf);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.esg-lista li:last-child {
+    margin-bottom: 0;
+}
+
+.esg-lista li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.esg-lista strong {
+    font-weight: 700;
+}
+
+/* ===== INIZIATIVE ===== */
+.iniziative {
+    background-color: white;
+    padding: 55px 6% 80px;
+}
+
+.iniziative-intro {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.iniziative-intro h2 {
+    color: var(--blu-bf);
+    line-height: 1.3;
+    margin: 0 0 18px;
+}
+
+.iniziative-intro p {
+    color: var(--blu-bf);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.iniziative-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 45px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.iniziativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+}
+
+.iniziativa-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+}
+
+.iniziativa-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.iniziativa p {
+    color: var(--blu-bf);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 380px;
+}
+
+.iniziativa-link:focus-visible {
+    outline: 2px solid var(--blu-bf);
+    outline-offset: 5px;
+}
+
+/* ===== REPORT ===== */
+.report {
+    background-image: linear-gradient( rgba(21, 59, 102, 0.25), rgba(21, 59, 102, 0.25) ), url("images/prima_large.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 500px;
+    padding: 50px 6% 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.report-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.report-content h2 {
+    line-height: 1.3;
+    margin: 0 0 22px;
+}
+
+.report-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto 70px;
+}
+
+.report-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.report-link img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.report-link span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.report-link:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 8px;
+    border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background-color: white;
+    color: var(--blu-bf);
+    padding: 55px 6% 25px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 140px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.footer-logo {
+    display: block;
+    width: 130px;
+    height: auto;
+}
+
+.footer-brand p {
+    max-width: 360px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-nav h3,
+.footer-social h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-nav a {
+    color: var(--blu-bf);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-icons img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.site-footer a:focus-visible {
+    outline: 2px solid var(--blu-bf);
+    outline-offset: 5px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid var(--bordo-chiaro);
+    max-width: 1400px;
+    margin: 45px auto 22px;
+}
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    color: var(--blu-bf);
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 6px;
+}
+
+.footer-bottom p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== MEDIA QUERY: (max-width: 1200px) ===== */
+@media (max-width: 1200px) {
+    /* Sostenibilità */
+    .sostenibilita-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sostenibilita-card:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 20px) / 2);
+        justify-self: center;
+    }
+
+}
+
+/* ===== MEDIA QUERY: (min-width: 769px) and (max-width: 1200px) ===== */
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* ESG */
+    .esg-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .esg-card:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 24px) / 2);
+        justify-self: center;
+    }
+
+    /* Iniziative */
+    .iniziative-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 50px 30px;
+    }
+
+    .iniziativa:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 30px) / 2);
+        justify-self: center;
+    }
+
+    /* Footer */
+    .footer-top {
+        column-gap: 35px;
+    }
+
+    .footer-brand p {
+        max-width: 290px;
+    }
+
+}
+
+/* ===== MEDIA QUERY: (max-width: 768px) ===== */
+@media (max-width: 768px) {
+    /* Scostamento per header mobile e titoli ridimensionati */
+    .azienda,
+    .sostenibilita,
+    .esg,
+    .iniziative,
+    .report {
+        scroll-margin-top: 75px;
+    }
+
+    .azienda-titolo,
+    .sostenibilita-intro h2,
+    .esg-intro h2,
+    .iniziative-intro h2,
+    .report-content h2 {
+        font-size: 28px;
+    }
+
+    /* Header */
+    .site-header {
+        height: 75px;
+        padding: 0 5%;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .site-header .site-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        width: 220px;
+        background-color: rgba(255, 255, 255, 0.96);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+    }
+
+    .site-header .site-nav.aperto {
+        display: block;
+    }
+
+    .site-header .site-nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+    }
+
+    .site-header .site-nav a {
+        display: block;
+        padding: 12px 16px;
+        border-radius: 5px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: calc(100svh - 75px);
+        padding: 50px 20px;
+        background-size: auto 125%;
+        background-position: 31% 0%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-azienda {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.25;
+        margin: 0 0 30px;
+    }
+
+    .hero-cta-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-cta-main a {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+
+    /* Mission */
+    .azienda-titolo {
+        padding: 35px 20px;
+    }
+
+    .azienda-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .azienda-testo {
+        padding: 35px 25px;
+    }
+
+    .azienda-testo p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .azienda-loghi {
+        padding: 30px 20px;
+        gap: 15px;
+    }
+
+    .azienda-logo {
+        min-height: 90px;
+    }
+
+    .azienda-logo img {
+        max-width: 150px;
+        max-height: 80px;
+    }
+
+    /* Sostenibilità */
+    .sostenibilita {
+        padding: 35px 5% 50px;
+    }
+
+    .sostenibilita-intro {
+        margin-bottom: 30px;
+    }
+
+    .sostenibilita-intro p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .sostenibilita-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .sostenibilita-card {
+        padding: 25px 22px;
+    }
+
+    .sostenibilita-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    /* ESG */
+    .esg {
+        padding: 35px 5% 50px;
+    }
+
+    .esg-intro {
+        margin-bottom: 30px;
+    }
+
+    .esg-intro p {
+        font-size: 15px;
+    }
+
+    .esg-contenitore {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .esg-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .esg-card h3 {
+        font-size: 20px;
+        padding: 18px 12px;
+    }
+
+    .esg-lista {
+        padding: 22px 18px 25px;
+    }
+
+    .esg-lista li {
+        line-height: 1.65;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .esg-lista li img {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* Iniziative */
+    .iniziative {
+        padding: 40px 6% 60px;
+    }
+
+    .iniziative-intro {
+        margin-bottom: 35px;
+    }
+
+    .iniziative-intro p {
+        font-size: 15px;
+    }
+
+    .iniziative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iniziativa-link {
+        height: 160px;
+    }
+
+    .iniziativa p {
+        font-size: 15px;
+    }
+
+    /* Report */
+    .report {
+        min-height: 440px;
+        padding: 65px 6%;
+    }
+
+    .report-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .report-content p {
+        font-size: 15px;
+        line-height: 1.65;
+        margin-bottom: 50px;
+    }
+
+    .report-link img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .report-link span {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 40px 6% 25px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-brand p {
+        font-size: 14px;
+        max-width: 340px;
+    }
+
+    .footer-nav h3,
+    .footer-social h3 {
+        font-size: 16px;
+    }
+
+    .footer-nav a {
+        font-size: 14px;
+    }
+
+    .footer-divider {
+        margin: 35px auto 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
+
+/* ===== MEDIA QUERY: (hover: hover) ===== */
+@media (hover: hover) {
+    /* Mission */
+    .azienda-logo img:hover {
+        transform: scale(1.08);
+    }
+
+    .azienda-logo img.logo-cai:hover {
+        transform: scale(1.40);
+    }
+
+    .azienda-logo img.logo-edu:hover {
+        transform: scale(1.50);
+    }
+
+    .azienda-logo img.logo-bf-agricola:hover {
+        transform: scale(1.13);
+    }
+
+    .azienda-logo img.logo-bf-international:hover {
+        transform: scale(1.00);
+    }
+
+    /* Sostenibilità */
+    .sostenibilita-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(21, 59, 102, 0.12);
+        border-color: #B6CCE2;
+    }
+
+    /* Iniziative */
+    .iniziativa-logo {
+        transition: transform 0.3s ease;
+    }
+
+    .iniziativa-link:hover .iniziativa-logo {
+        transform: scale(1.08);
+    }
+
+    /* Report */
+    .report-link:hover img {
+        transform: translateY(-5px) scale(1.08);
+    }
+
+    /* Footer */
+    .footer-nav a:hover {
+        color: #3976B5;
+    }
+
+    .footer-social-icons a:hover img {
+        transform: scale(1.12);
+    }
+
+}
