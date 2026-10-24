@@ -89,7 +89,7 @@ body {
 /* ===== HERO ===== */
 .hero {
     min-height: calc(100svh - 90px);
-    background-image: linear-gradient( rgba(15, 45, 85, 0.50), rgba(15, 45, 85, 0.50) ), url("images/hero_image.jpg");
+    background-image: linear-gradient( rgba(15, 45, 85, 0.70), rgba(15, 45, 85, 0.70) ), url("images/hero_image.jpg");
     background-size: cover;
     background-position: center 30%;
     display: flex;
@@ -444,7 +444,7 @@ body {
 
 /* ===== REPORT ===== */
 .report {
-    background-image: linear-gradient( rgba(21, 59, 102, 0.25), rgba(21, 59, 102, 0.25) ), url("images/prima_large.webp");
+    background-image: linear-gradient( rgba(21, 59, 102, 0.50), rgba(21, 59, 102, 0.50) ), url("images/prima_large.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
