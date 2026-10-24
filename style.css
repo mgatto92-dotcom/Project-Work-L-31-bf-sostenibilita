@@ -1000,3 +1000,13 @@ body {
     }
 
 }
+/* Mission - Correzione logo educational */
+
+@media (max-width: 400px) {
+
+    .azienda-logo img.logo-edu {
+        transform: scale(1.25);
+    }
+
+}
+
