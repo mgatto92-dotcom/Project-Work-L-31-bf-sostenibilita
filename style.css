@@ -89,7 +89,7 @@ body {
 /* ===== HERO ===== */
 .hero {
     min-height: calc(100svh - 90px);
-    background-image: linear-gradient( rgba(15, 45, 85, 0.70), rgba(15, 45, 85, 0.70) ), url("images/hero_image.jpg");
+    background-image: linear-gradient( rgba(15, 45, 85, 0.70), rgba(15, 45, 85, 0.70) ), url("images/hero_image.webp");
     background-size: cover;
     background-position: center 30%;
     display: flex;
